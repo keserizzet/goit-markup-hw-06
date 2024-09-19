@@ -7,6 +7,13 @@ h1, h2, h3, h4, h5, h6, p, ul{
     margin: 0;
     padding: 0;
     list-style: none;
+
+}
+.portfolio ul li .name h4{
+    font-weight: 500;
+}
+.portfolio ul li .name p{
+    font-weight: 400;
 }
 header .menuler{
     display: flex;
@@ -41,7 +48,7 @@ header .menuler .sag ul{
     gap: 25px;
     align-items: center;
 }
-header a{
+header .stud{
     text-decoration: none;
     color: #2E2F42;
     font-weight: 700;
@@ -49,8 +56,21 @@ header a{
     font-size: 18px;
     padding: 20px;
 }
+header .stud span{
+    color: #4D5AE5;
+    font-weight: 700;
+}
+header a{
+    text-decoration: none;
+    color: #2E2F42;
+    font-weight: 500;
+    font-family:  "Raleway", sans-serif;
+    font-size: 16px;
+    padding: 20px;
+}
 header a span{
     color: #4D5AE5;
+    font-weight: 700;
 }
 header nav ul li{
     list-style: none;
@@ -61,7 +81,7 @@ header .menu{
     cursor: pointer;
 }
 header nav ul li a:hover{
-    color: #9747FF;
+    color: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,20 +96,28 @@ header nav ul li a:after{
     background-color: #404BBF;
 }
 header nav ul li a:active{
-    border-bottom: 3px solid #9747FF;
+    border-bottom: 3px solid #404BBF;
 }
 header .contact{
     display: flex;
     gap: 15px;
+    font-weight: 400;
 }
 header .contact a:hover{
-    color: #9747FF;
+    color: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
               box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 .slider{
-    height: 800px;
+    height: 672px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +141,7 @@ header .contact a:hover{
     font-size: 50px;
     color: #ffffff;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .modal-button:hover{
@@ -125,7 +154,7 @@ header .contact a:hover{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 9999999999999;
     left: 0;
     top: 0;
     width: 100%;
@@ -138,7 +167,7 @@ header .contact a:hover{
     border-radius: 5px;
     background-color: #4D5AE5;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     padding: 0;
     padding-top: 20px;
@@ -155,11 +184,16 @@ header .contact a:hover{
 }
 .modal .modal-content {
     background-color: #fff;
-    margin: 5% auto;
+    margin: 0 auto;
+    position: relative;
+    top: 85px;
     padding: 20px;
     border: 1px solid #888;
-    width: 24%;
-    height: 60%;
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px #00000024;
+
 }
 
 form #name[placeholder]{
@@ -357,7 +391,9 @@ form .kutu #scales{
 }
 
 .yazilar h2{
-    font-size: 30px;
+    font-size: 25px;
+    color: #2E2F42;
+    font-weight: 500;
 }
 .yazilar li{
     display: flex;
@@ -392,6 +428,8 @@ form .kutu #scales{
 }
 .yazilar ul li p{
     font-size: 18px;
+    color: #434455;
+    font-weight: 400;
 }
 .team{
     height: 800px;
@@ -410,6 +448,7 @@ form .kutu #scales{
     justify-content: center;
     padding: 7% 0px 50px;
     font-size: 30px;
+    font-weight: 700;
 }
 .team ul {
     display: flex;
@@ -451,9 +490,11 @@ form .kutu #scales{
     font-size: 22px;
     color: #2E2F42;
     padding-bottom: 20px;
+    font-weight: 500;
 }
 .team ul li .name p{
     color: #434455;
+    font-weight: 400;
 }
 .portfolio{
     height: 1200px;
@@ -474,7 +515,7 @@ form .kutu #scales{
     font-size: 30px;
     display: flex;
     justify-content: center;
-    
+    font-weight: 700;
 }
 .portfolio ul{
     display: grid;
@@ -533,6 +574,7 @@ form .kutu #scales{
     padding: 50px;
     font-size: 17px;
     color: #fff;
+    font-weight: 400;
   }
   .portfolio-list:active .image-container .overlay,
   .portfolio-list:focus-within .image-container .overlay {
@@ -547,10 +589,9 @@ footer{
 footer .container{
     display: flex;
     gap: 15px;
-    width: 1465px;
+    width: 1255px;
     align-items: start;
-    position: relative;
-    left: 18%;
+    margin-left: 13%;
 }
 footer .container .sol{
     display: flex;
@@ -592,13 +633,15 @@ footer a{
 }
 footer a span{
     color: #4D5AE5;
+    font-weight: 700;
 }
 footer p{
     color: #F4F4FD;
-    
+    font-weight: 400;
 }
 footer .subscribe{
-    margin-left: 15%;
+    position: relative;
+    left: 14%;
 }
 .subscribe-form {
     width: 100%;
@@ -621,7 +664,7 @@ footer .subscribe{
     letter-spacing: 0.02em;
     text-align: left;
     color: #fff;
-    
+    font-weight: 500;
   }
   input[type="email"]
    {
@@ -665,38 +708,210 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 }
 .mailbutton{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.mobile-menu{
-    display: none;
+footer .container .sag h3{
+    font-weight: 500;
 }
-.menu-toggle{
-    display: none;
-}
-@media (max-width:320px){
-    .mobile-menu{
-        display: none;
+@media (max-width: 320px) {
+    .menu {
+        display: flex;
+        list-style: none;
+        border: 0 solid #ffffff;
+        width: 54%;
+        padding: 0px;
+        border-bottom: 1px solid #E7E9FC;
+        background-color: #ffffff;
     }
-    .sol a{
+
+    .menu.is-open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .sol, .sag {
+        display: block;
+        text-align: center;
+    }
+    header .menuler .sol{
+        margin-left: 0;
         
     }
-    .menu-toggle{
-        display: block;
+    .sag {
+        margin-top: 15px;
     }
-    .slider{
-        height: 800px;
+    header nav ul li{
+        display: none;
+    }
+    .slider {
+        height: 432px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: #2E2F42;
         background-size: 1440px auto;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent),
-                  url('../images/people-office1.jpg') center/cover no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent), url(../images/people-office1.jpg) center / cover no-repeat;
+        width: 320px;
+        top: 56px;
+        position: relative;
+    }
+    .slider h1 {
+        color: #ffffff;
+        width: 216px;
+        height: 160px;
+        top: 10px;
+        left:0;
+        gap: 0px;
+        opacity: 0px;
+        position: relative;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .modal-button {
+        border: 0 solid transparent;
+        border-radius: 5px;
+        background-color: #4D5AE5;
+        color: #ffffff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: Hug(169px) px;
+        height: Hug(56px) px;
+        top: 50px;
+        left: 0;
+        padding: 16px 32px 16px 32px;
+        gap: 10px;
+        opacity: 0px;
+        position: relative;
+    }
+    .yazilar{
+        height: 845px;
+    }
+    .yazilar .container{
+        width: 288px;
+        height: 606px;
+        top: 0;
+        left: 0;
+        gap: 72px;
+        opacity: 0px;
+        position: relative;
+    }
+    .yazilar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .yazilar ul li .icon{
+        display: none;
+        
+    }
+    .yazilar ul li h2{
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .yazilar ul li p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .team{
+        width: 320px;
+        height: 2232px;
+        top: 0;
+        gap: 0px;
+        opacity: 0px;
+        position: relative;
+
+    }
+    .team ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+    .team ul li .name ul{
+        display: flex;
+        flex-direction: row;
+        width: 232px;
+        height: 40px;
+        display: flex;
+        gap: 25px;
+    }
+    .team ul li .name ul li{
+        width: 40px;
+        height: 40px;
+        
+    }
+    .team ul li .name ul li a{
+        position: relative;
+        right: 10px;
+        bottom: 10px;
+    }
+    .team ul li .name ul li:hover{
+        background-color: #31D0AA;
+    }
+    .team h2 {
+        display: flex;
+        justify-content: center;
+        padding: 15% 0px 50px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .team ul .card-list{
+        width: 264px;
+        height: 428px;
+        padding: 0px 0px 32px 0px;
+        gap: 32px;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 0px;
+    }
+    .team ul .card-list img{
+        width: 264px;
+        height: 260px;
+    }
+    .portfolio{
+        width: 288px;
+        height: 2752px;
+        top: 3704px;
+        left: 16px;
+    }
+    .portfolio h2{
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .portfolio ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .portfolio ul li{
+        width: 288px;
+        height: 400px;
+        top: 0;
+        left: 0;   
+        position: relative; 
     }
 }

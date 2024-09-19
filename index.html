@@ -15,24 +15,16 @@
 <body>
     <header>
         <div class="menuler fixed">
-            <div class="sol"> <a href="#"><span>WEB</span>STUDIO</a>
+            <div class="sol">
+                <a class="stud" href="#"><span>WEB</span>STUDIO</a>
                 <nav class="mobile-menu">
+                    <button class="menu-toggle">☰</button> <!-- Menü düğmesi -->
                     <ul class="menu">
-                        <li>
-                            <a class="studio" href="#">Studio
-                            </a>
-                            </li>
-                        <li>
-                            <a href="#">Portfolio
-                            </a>
-                            </li>
-                        <li>
-                            <a href="#">Contacts
-                            </a>
-                            </li>
+                        <li><a class="studio" href="#">Studio</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
-                <button class="menu-toggle"><span></span><span></span><span></span></button>
             </div>
             <div class="sag">
                 <address>
@@ -45,8 +37,9 @@
                         </li>
                     </ul>
                 </address>
+            </div>
         </div>
-        </div>
+        
                
                 
         <section class="slider">
@@ -69,7 +62,7 @@
                             <input type="tel" id="phone" name="phone" placeholder  required>
 
                             <label for="email">Email</label>
-                            <input type="mail" id="email" name="email" placeholder required>
+                            <input type="mail" id="email" name="email" placeholder="E-mail" required>
 
                             <label for="comment">Comment</label>
                             <textarea id="comment" placeholder="Text input" name="comment" rows="6" cols="50"></textarea>
@@ -126,12 +119,12 @@
             <div class="container">
                 <h2>Our Team</h2>
                 <ul>
-                    <li>
+                    <li class="card-list">
                         <img src="images/img.jpg" alt="Siyah sakallı erkek" width="300">
                         <div class="name">
                             <h4>Mark Guerrero</h4>
                             <p>Product Designer</p>
-                            <ul>
+                            <ul class="social-link">
                                 <li>
                                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M373.406 0H138.594C62.172 0 0 62.172 0 138.594V373.41C0 449.828 62.172 512 138.594 512H373.41C449.828 512 512 449.828 512 373.41V138.594C512 62.172 449.828 0 373.406 0zm108.578 373.41c0 59.867-48.707 108.574-108.578 108.574H138.594c-59.871 0-108.578-48.707-108.578-108.574V138.594c0-59.871 48.707-108.578 108.578-108.578H373.41c59.867 0 108.574 48.707 108.574 108.578zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M256 116.004c-77.195 0-139.996 62.8-139.996 139.996S178.804 395.996 256 395.996 395.996 333.196 395.996 256 333.196 116.004 256 116.004zm0 249.976c-60.64 0-109.98-49.335-109.98-109.98 0-60.64 49.34-109.98 109.98-109.98 60.645 0 109.98 49.34 109.98 109.98 0 60.645-49.335 109.98-109.98 109.98zM399.344 66.285c-22.813 0-41.367 18.559-41.367 41.367 0 22.813 18.554 41.371 41.367 41.371s41.37-18.558 41.37-41.37-18.558-41.368-41.37-41.368zm0 52.719c-6.258 0-11.352-5.094-11.352-11.352 0-6.261 5.094-11.351 11.352-11.351 6.261 0 11.355 5.09 11.355 11.351 0 6.258-5.094 11.352-11.355 11.352zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a>
                                 </li>
@@ -147,12 +140,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="card-list">
                         <img src="images/img1.jpg" alt="Gülerek bakan erkek" width="300">
                         <div class="name">
                             <h4>Tom Ford</h4>
                             <p>Frontend Developer</p>
-                            <ul>
+                            <ul class="social-link">
                                 <li>
                                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M373.406 0H138.594C62.172 0 0 62.172 0 138.594V373.41C0 449.828 62.172 512 138.594 512H373.41C449.828 512 512 449.828 512 373.41V138.594C512 62.172 449.828 0 373.406 0zm108.578 373.41c0 59.867-48.707 108.574-108.578 108.574H138.594c-59.871 0-108.578-48.707-108.578-108.574V138.594c0-59.871 48.707-108.578 108.578-108.578H373.41c59.867 0 108.574 48.707 108.574 108.578zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M256 116.004c-77.195 0-139.996 62.8-139.996 139.996S178.804 395.996 256 395.996 395.996 333.196 395.996 256 333.196 116.004 256 116.004zm0 249.976c-60.64 0-109.98-49.335-109.98-109.98 0-60.64 49.34-109.98 109.98-109.98 60.645 0 109.98 49.34 109.98 109.98 0 60.645-49.335 109.98-109.98 109.98zM399.344 66.285c-22.813 0-41.367 18.559-41.367 41.367 0 22.813 18.554 41.371 41.367 41.371s41.37-18.558 41.37-41.37-18.558-41.368-41.37-41.368zm0 52.719c-6.258 0-11.352-5.094-11.352-11.352 0-6.261 5.094-11.351 11.352-11.351 6.261 0 11.355 5.09 11.355 11.351 0 6.258-5.094 11.352-11.355 11.352zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a>
                                 </li>
@@ -167,12 +160,12 @@
                                 </li> </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="card-list">
                         <img src="images/img2.jpg" alt="Uzun saçlı kadın" width="300">
                         <div class="name">
                             <h4>Camilla Garcia</h4>
                             <p>Marketing</p>
-                            <ul>
+                            <ul class="social-link">
                                 <li>
                                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M373.406 0H138.594C62.172 0 0 62.172 0 138.594V373.41C0 449.828 62.172 512 138.594 512H373.41C449.828 512 512 449.828 512 373.41V138.594C512 62.172 449.828 0 373.406 0zm108.578 373.41c0 59.867-48.707 108.574-108.578 108.574H138.594c-59.871 0-108.578-48.707-108.578-108.574V138.594c0-59.871 48.707-108.578 108.578-108.578H373.41c59.867 0 108.574 48.707 108.574 108.578zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M256 116.004c-77.195 0-139.996 62.8-139.996 139.996S178.804 395.996 256 395.996 395.996 333.196 395.996 256 333.196 116.004 256 116.004zm0 249.976c-60.64 0-109.98-49.335-109.98-109.98 0-60.64 49.34-109.98 109.98-109.98 60.645 0 109.98 49.34 109.98 109.98 0 60.645-49.335 109.98-109.98 109.98zM399.344 66.285c-22.813 0-41.367 18.559-41.367 41.367 0 22.813 18.554 41.371 41.367 41.371s41.37-18.558 41.37-41.37-18.558-41.368-41.37-41.368zm0 52.719c-6.258 0-11.352-5.094-11.352-11.352 0-6.261 5.094-11.351 11.352-11.351 6.261 0 11.355 5.09 11.355 11.351 0 6.258-5.094 11.352-11.355 11.352zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a>
                                 </li>
@@ -187,12 +180,12 @@
                                 </li> </ul>
                         </div>
                     </li>
-                    <li>
+                    <li class="card-list">
                         <img src="images/img3.jpg" alt="Siyah saçlı erkek" width="300">
                         <div class="name">
                             <h4>Daniel Wilson</h4>
                             <p>UI Designer</p>
-                            <ul>
+                            <ul class="social-link">
                                 <li>
                                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M373.406 0H138.594C62.172 0 0 62.172 0 138.594V373.41C0 449.828 62.172 512 138.594 512H373.41C449.828 512 512 449.828 512 373.41V138.594C512 62.172 449.828 0 373.406 0zm108.578 373.41c0 59.867-48.707 108.574-108.578 108.574H138.594c-59.871 0-108.578-48.707-108.578-108.574V138.594c0-59.871 48.707-108.578 108.578-108.578H373.41c59.867 0 108.574 48.707 108.574 108.578zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path><path d="M256 116.004c-77.195 0-139.996 62.8-139.996 139.996S178.804 395.996 256 395.996 395.996 333.196 395.996 256 333.196 116.004 256 116.004zm0 249.976c-60.64 0-109.98-49.335-109.98-109.98 0-60.64 49.34-109.98 109.98-109.98 60.645 0 109.98 49.34 109.98 109.98 0 60.645-49.335 109.98-109.98 109.98zM399.344 66.285c-22.813 0-41.367 18.559-41.367 41.367 0 22.813 18.554 41.371 41.367 41.371s41.37-18.558 41.37-41.37-18.558-41.368-41.37-41.368zm0 52.719c-6.258 0-11.352-5.094-11.352-11.352 0-6.261 5.094-11.351 11.352-11.351 6.261 0 11.355 5.09 11.355 11.351 0 6.258-5.094 11.352-11.355 11.352zm0 0" fill="#ffffff" opacity="1" data-original="#000000" class=""></path></g></svg></a>
                                 </li>
