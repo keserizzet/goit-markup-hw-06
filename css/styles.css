@@ -555,7 +555,6 @@ form .kutu #scales{
     flex-direction: column;
     gap: 15px;
 }
-/* portfolio güncel */
 .portfolio-list {
     position: relative;
     overflow: hidden;
@@ -580,7 +579,6 @@ form .kutu #scales{
   .portfolio-list:focus-within .image-container .overlay {
     opacity: 1;
   } 
-/* portfolio güncel */
 footer{
     height: 300px;
     background-color: #2E2F42;
@@ -737,7 +735,9 @@ footer .container .sag h3{
     .menu.is-open {
         display: flex;
     }
-
+    header .menu{
+        display: none;
+    }
     .menu-toggle {
         display: inline-block;
         width: 24px;
@@ -762,6 +762,9 @@ footer .container .sag h3{
     header nav ul li{
         display: none;
     }
+    header .menuler .sag ul{
+        display: none;
+    }
     .slider {
         height: 432px;
         display: flex;
@@ -774,6 +777,12 @@ footer .container .sag h3{
         width: 320px;
         top: 56px;
         position: relative;
+    }
+    .slider .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px; 
     }
     .slider h1 {
         color: #ffffff;
@@ -1010,6 +1019,7 @@ footer .container .sag h3{
         letter-spacing: 0.02em;
         text-align: left;
         position: relative;
+        width: 300px;
     }
     footer .container .sag{
         width: 320px;
@@ -1049,6 +1059,345 @@ footer .container .sag h3{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    input[type="email"] {
+        width: 285px;
+        height: 40px;
+        gap: 0px;
+        border-radius: 5px;
+        border: 1px 0px 0px 0px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        list-style: none;
+        border: 0 solid #ffffff;
+        width: 54%;
+        padding: 0px;
+        border-bottom: 1px solid #E7E9FC;
+        background-color: #ffffff;
+    }
+    header .fixed {
+        position: fixed;
+        z-index: 99999999;
+        width: 768px;
+        height: 56px;
+    }
+    .menu.is-open {
+        display: flex;
+    }
+    header .menu{
+        display: none;
+    }
+    .menu-toggle {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        top: 0px;
+        left: 68px;
+        padding: 4.8px 3.6px 4.8px 3.6px;
+        position: relative;
+    }
+
+    .sol, .sag {
+        display: block;
+        text-align: center;
+    }
+    header .menuler .sol{
+        margin-left: 0;
+        
+    }
+    .sag {
+        margin-top: 15px;
+    }
+    header nav ul li{
+        display: none;
+    }
+    header .menuler .sag ul{
+        display: none;
+    }
+    .slider {
+        height: 432px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2E2F42;
+        background-size: 1440px auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent), url(../images/people-office1.jpg) center / cover no-repeat;
+        width: 768px;
+        top: 56px;
+        position: relative;
+    }
+    .slider .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 768px; 
+    }
+    .slider h1 {
+        color: #ffffff;
+        width: 216px;
+        height: 160px;
+        top: 10px;
+        left:0;
+        gap: 0px;
+        opacity: 0px;
+        position: relative;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .modal-button {
+        border: 0 solid transparent;
+        border-radius: 5px;
+        background-color: #4D5AE5;
+        color: #ffffff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: Hug(169px) px;
+        height: Hug(56px) px;
+        top: 50px;
+        left: 0;
+        padding: 16px 32px 16px 32px;
+        gap: 10px;
+        opacity: 0px;
+        position: relative;
+    }
+    .yazilar{
+        height: 500px;
+    }
+    .yazilar .container{
+        width: 736px;
+        height: 312px;
+    }
+    .yazilar ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .yazilar ul li .icon{
+        display: none;
+        
+    }
+    .yazilar ul li h2{
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .yazilar ul li p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .team{
+        width: 768px;
+        height: 1124px;
+    }
+    .team ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 71%;
+        margin-left: 15%;
+        row-gap: 55px;
+    }
+    .team ul li .name ul{
+        display: flex;
+        flex-direction: row;
+        width: 232px;
+        height: 40px;
+        display: flex;
+        gap: 25px;
+        margin-left: 0;
+    }
+    .team ul li .name ul li{
+        width: 40px;
+        height: 40px;
+        
+    }
+    .team ul li .name ul li a{
+        position: relative;
+        right: 10px;
+        bottom: 10px;
+    }
+    .team ul li .name ul li:hover{
+        background-color: #31D0AA;
+    }
+    .team h2 {
+        display: flex;
+        justify-content: center;
+        padding: 9% 0px 50px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .team ul .card-list{
+        width: 264px;
+        height: 428px;
+        padding: 0px 0px 32px 0px;
+        gap: 32px;
+        border-radius: 0px 0px 4px 4px;
+        opacity: 0px;
+    }
+    .team ul .card-list img{
+        width: 264px;
+        height: 260px;
+    }
+    .portfolio{
+        width: 768px;
+        height: 1516px;
+    }
+    .portfolio h2{
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+    }
+    .portfolio ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .image{
+        width: 356px;
+        height: 300px;
+    }
+    .portfolio ul li .name h4{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .portfolio ul li .name p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .bank{
+        width: 296px;
+        height: 96px;
+        top: 0;
+        left: 0;
+        position: relative;
+        font-size: 16px;
+        padding: 42px;
+    }
+    .portfolio-list .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 465px;
+        background-color: #4D5AE5;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        padding: 0px;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 400;
+    }
+    .portfolio ul li {
+        width: 356px;
+        height: 420px;
+    }
+    .portfolio ul li .name {
+        padding: 15px;
+        cursor: pointer;
+        padding-bottom: 28px;
+        padding-top: 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer{
+        height: 664px;
+        background-color: #2E2F42;
+        padding: 100px 0;
+    }
+    footer .container{
+        display: grid;
+        gap: 60px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 768px;
+        border: 1px 0px 0px 0px;
+    }
+    footer .container .sol{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 264px;
+        height: 112px;
+        left: 0;
+        opacity: 0px;
+        position: relative;
+    }
+    footer .container .sol p{
+        left: 16px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        position: relative;
+        width: 300px;
+    }
+    footer .container .sag{
+        width: 208px;
+        height: 80px;
+        left: 0;
+        position: relative;
+    }
+    footer .container .sag h3{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+    footer .container .sag ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+    }
+    footer .container .subscribe{
+        width: 768px;
+        height: 136px;
+        left: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .mailbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
     }
     input[type="email"] {
         width: 285px;
