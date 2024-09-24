@@ -728,13 +728,24 @@ footer .container .sag h3{
         border-bottom: 1px solid #E7E9FC;
         background-color: #ffffff;
     }
-
+    header .fixed {
+        position: fixed;
+        z-index: 99999999;
+        width: 320px;
+        height: 56px;
+    }
     .menu.is-open {
         display: flex;
     }
 
     .menu-toggle {
         display: inline-block;
+        width: 24px;
+        height: 24px;
+        top: 0px;
+        left: 68px;
+        padding: 4.8px 3.6px 4.8px 3.6px;
+        position: relative;
     }
 
     .sol, .sag {
@@ -889,7 +900,7 @@ footer .container .sag h3{
         height: 260px;
     }
     .portfolio{
-        width: 288px;
+        width: 320px;
         height: 2752px;
         top: 3704px;
         left: 16px;
@@ -907,11 +918,146 @@ footer .container .sag h3{
         flex-direction: column;
         
     }
+    .image{
+        width: 288px;
+        height: 280px;
+    }
+    .portfolio ul li .name h4{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .portfolio ul li .name p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .bank{
+        width: 296px;
+        height: 96px;
+        top: 0;
+        left: 0;
+        position: relative;
+        font-size: 16px;
+        padding: 42px;
+    }
+    .portfolio-list .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 465px;
+        background-color: #4D5AE5;
+        opacity: 0;
+        transition: opacity 0.25s ease-in-out;
+        padding: 0px;
+        font-size: 17px;
+        color: #fff;
+        font-weight: 400;
+    }
     .portfolio ul li{
         width: 288px;
         height: 400px;
         top: 0;
         left: 0;   
         position: relative; 
+    }
+    .portfolio ul li .name {
+        padding: 15px;
+        cursor: pointer;
+        padding-bottom: 28px;
+        padding-top: 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer{
+        height: 664px;
+        background-color: #2E2F42;
+        padding: 100px 0;
+    }
+    footer .container{
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        width: 320px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        margin-left: 0;
+    }
+    footer .container .sol{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 320px;
+        height: 112px;
+        left: 0;
+        opacity: 0px;
+        position: relative;
+    }
+    footer .container .sol p{
+        left: 16px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        position: relative;
+    }
+    footer .container .sag{
+        width: 320px;
+        height: 80px;
+        left: 0;
+        position: relative;
+    }
+    footer .container .sag h3{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+    footer .container .sag ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+    }
+    footer .container .subscribe{
+        width: 320px;
+        height: 136px;
+        left: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .mailbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="email"] {
+        width: 285px;
+        height: 40px;
+        gap: 0px;
+        border-radius: 5px;
+        border: 1px 0px 0px 0px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
     }
 }
