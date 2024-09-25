@@ -1085,16 +1085,20 @@ footer .container .sag h3{
         position: fixed;
         z-index: 99999999;
         width: 768px;
-        height: 56px;
+        height: 72px;
     }
     .menu.is-open {
         display: flex;
     }
     header .menu{
-        display: none;
+        display: flex;
+        width: 100%;
+        height: 48px;
+        border: none;
+        align-items: center;
     }
     .menu-toggle {
-        display: inline-block;
+        display: none;
         width: 24px;
         height: 24px;
         top: 0px;
@@ -1102,23 +1106,42 @@ footer .container .sag h3{
         padding: 4.8px 3.6px 4.8px 3.6px;
         position: relative;
     }
-
+    header .contact a {
+        text-decoration: none;
+        color: #2E2F42;
+        padding: 0;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        text-align: left;
+    }
     .sol, .sag {
         display: block;
         text-align: center;
     }
+    header .menuler .sag {
+        display: flex;
+        width: 100px;
+        margin-left: 29%;
+    }
     header .menuler .sol{
-        margin-left: 0;
-        
+        margin-left: 0;  
     }
     .sag {
         margin-top: 15px;
     }
     header nav ul li{
-        display: none;
+        display: flex;
     }
-    header .menuler .sag ul{
-        display: none;
+    header .menuler .sag ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 45%;
+        bottom: 9px;
+        gap: 15px;
     }
     .slider {
         height: 432px;
@@ -1336,8 +1359,8 @@ footer .container .sag h3{
     footer .container{
         display: grid;
         gap: 60px;
-        grid-template-columns: repeat(2, 1fr);
-        width: 768px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 668px;
         border: 1px 0px 0px 0px;
     }
     footer .container .sol{
@@ -1347,25 +1370,33 @@ footer .container .sag h3{
         width: 264px;
         height: 112px;
         left: 0;
-        opacity: 0px;
         position: relative;
     }
-    footer .container .sol p{
-        left: 16px;
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.02em;
+    footer a {
+        text-decoration: none;
+        color: #F4F4FD;
+        font-weight: 700;
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
         text-align: left;
-        position: relative;
-        width: 300px;
+    }
+        footer .container .sol p {
+            left: 0px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            position: relative;
+            width: 300px;
     }
     footer .container .sag{
         width: 208px;
         height: 80px;
-        left: 0;
-        position: relative;
+        left: 51%;
+        position: absolute;
+        margin: -3px;
     }
     footer .container .sag h3{
         font-family: Roboto;
@@ -1373,25 +1404,28 @@ footer .container .sag h3{
         font-weight: 500;
         line-height: 24px;
         letter-spacing: 0.02em;
+        text-align: left;
     }
     footer .container .sag ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 768px;
+        width: 100%;
     }
     footer .container .subscribe{
-        width: 768px;
+        width: 668px;
         height: 136px;
         left: 0;
         position: relative;
         display: flex;
         flex-direction: column;
+        top: 30px;
     }
     .mailbutton {
         display: flex;
         align-items: center;
-        justify-content: center;       
+        justify-content: center;  
+        margin-right: 100px;    
     }
     .form-group {
         display: flex;
@@ -1408,5 +1442,9 @@ footer .container .sag h3{
         background-color: transparent;
         border: 1px solid #fff;
         color: #fff;
+    }
+    button[type="button"] {     
+        margin-left: 21px;
+        margin-bottom: 4px;
     }
 }
