@@ -776,6 +776,8 @@ footer .container .sag h3{
     flex-direction: column;
     gap: 5px;
   }
+  
+
   .menu-social{
     display: none;
   }
@@ -823,6 +825,7 @@ footer .container .sag h3{
   .menu a:hover {
     color: #404BBF;
   }
+
   .menu, #contact-info {
     z-index: 999999;
     display: flex;
@@ -864,7 +867,8 @@ footer .container .sag h3{
         height: 2px;
         width: 20px;
         background: #2F2F37;
-    }
+        }
+        
     .menu {
         display: none; 
         width: 100vw; 
