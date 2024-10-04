@@ -781,6 +781,7 @@ footer .container .sag h3{
   }
   #menu-toggle:checked ~ .menu-social {
     display: block;
+    z-index: 9999999999;
   }
   .menuler .social-link{
     display: flex;
@@ -820,7 +821,7 @@ footer .container .sag h3{
   }
   
   .menu a:hover {
-    background-color: lightgray;
+    color: #404BBF;
   }
   .menu, #contact-info {
     z-index: 999999;
