@@ -423,6 +423,9 @@ form .kutu #scales{
     letter-spacing: 2%;
     text-align: left;
 }
+.menu-social{
+    display: none;
+}
 .yazilar ul{
     display: flex;
     list-style: none;
@@ -720,8 +723,12 @@ input[type="submit"] {
 footer .container .sag h3{
     font-weight: 500;
 }
-
-@media (max-width: 320px) {
+@media (min-resolution: 96dpi) {
+    .high-res {
+      background-image: url('../images/people-office1.jpg');
+    }
+  }
+@media (min-width: 320px) and (max-width: 767px) {
     .menu-toggle{
         display: flex;
     }    
@@ -1266,7 +1273,7 @@ footer .container .sag h3{
         color: #fff;
     }
 }
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1158px) {
     .menu {
         display: flex;
         list-style: none;
