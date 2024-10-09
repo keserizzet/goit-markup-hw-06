@@ -764,7 +764,7 @@ footer .container .sag h3{
       background-image: url('../images/people-office1.jpg');
     }
   }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 320px) and (max-width: 767px) {
     .menu-toggle{
         display: flex;
     }    
@@ -1309,7 +1309,7 @@ footer .container .sag h3{
         color: #fff;
     }
 }
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 321px) and (max-width: 768px)  {
     .menu {
         display: flex;
         list-style: none;
@@ -1435,6 +1435,9 @@ footer .container .sag h3{
     }
     .yazilar{
         height: 500px;
+        display: block;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     .yazilar .container{
         width: 736px;
